@@ -1,5 +1,9 @@
 resource "github_repository" "workshop_sample" {
-    name = "workshop_sample"
-    description = "A sample workshop repository"
-    visibility = "public"
+  name        = var.repo_name
+  description = var.repo_description
+  visibility  = var.repo_visibility
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
