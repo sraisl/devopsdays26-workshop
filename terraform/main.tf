@@ -4,6 +4,6 @@ resource "github_repository" "workshop_sample" {
   visibility  = var.repo_visibility
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }

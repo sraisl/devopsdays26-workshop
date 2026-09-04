@@ -1,3 +1,3 @@
 provider "github" {
-    owner = "sraisl"
+    owner = var.github_owner
 }
